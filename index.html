@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terrile Mateo - Parcial Programación III</title>
+  <!--
+    Parcial Programación III - Tienda de Frutas
+    Alumno: Mateo Terrile - DNI: 45200599
+  -->
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  
+  <!-- 
+    Decidí usar flexbox con justify-content: space-between porque es la forma más simple de separar los elementos en los extremos y centro.
+  -->
+  <header>
+    <h1>Fruteria</h1>
+    <div class="centro-header">
+      <p id="alumno"></p>
+      <input type="text" id="barra-busqueda" placeholder="Buscar...">
+    </div>
+    <p id="estado-carrito">Carrito: 0 productos</p>
+  </header>
+
+  <main>
+    <!-- Sección de productos -->
+    <!-- Decidí usar un contenedor con id="contenedor-productos" donde inserto dinamicamente las cards con javascript. -->
+    <h2>Nuestras frutas</h2>
+    
+    <div>
+      <button id="ordenar-nombre">Ordenar por nombre</button>
+      <button id="ordenar-precio">Ordenar por precio</button>
+    </div>
+    
+    <section id="contenedor-productos"></section>
+    
+    <hr>
+    
+    <!-- Carrito -->
+    <div class="seccion-carrito">
+      <h2>Carrito</h2>
+      <section id="contenedor-carrito"></section>
+    </div>
+
+  </main>
+
+</body>
+</html>
